@@ -100,7 +100,7 @@ class k8s_Client(object):
 
         # fill the container details. we can only handle one container (take the first, delete the rest)
         yaml_containers = yaml_content["spec"]["template"]["spec"]["containers"]
-        del yaml_containers[1 : len(yaml_containers)]
+        #del yaml_containers[1 : len(yaml_containers)]
 
         container_env = yaml_containers[0]
 
